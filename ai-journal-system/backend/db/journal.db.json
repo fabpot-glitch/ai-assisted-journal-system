@@ -1,0 +1,114 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "userId": "user_001",
+      "ambience": "ocean",
+      "text": "I felt calm today after listening to the rain. My mind was clear and peaceful",
+      "emotion": null,
+      "keywords": [],
+      "summary": null,
+      "analyzed": 0,
+      "createdAt": "2026-03-14T05:20:09.913Z"
+    },
+    {
+      "id": 2,
+      "userId": "231_4",
+      "ambience": "ocean",
+      "text": "i felt so calm and peaceful",
+      "emotion": null,
+      "keywords": [],
+      "summary": null,
+      "analyzed": 0,
+      "createdAt": "2026-03-14T05:20:59.315Z"
+    },
+    {
+      "id": 3,
+      "userId": "user_001",
+      "ambience": "forest",
+      "text": "i felt so calm and peaceful",
+      "emotion": null,
+      "keywords": [],
+      "summary": null,
+      "analyzed": 0,
+      "createdAt": "2026-03-14T05:25:42.945Z"
+    },
+    {
+      "id": 4,
+      "userId": "user_001",
+      "ambience": "forest",
+      "text": "i feel so calmed and peaceful",
+      "emotion": null,
+      "keywords": [],
+      "summary": null,
+      "analyzed": 0,
+      "createdAt": "2026-03-14T05:32:04.954Z"
+    },
+    {
+      "id": 5,
+      "userId": "user_001",
+      "ambience": "rain",
+      "text": "i feel so calmed and peaceful",
+      "emotion": null,
+      "keywords": [],
+      "summary": null,
+      "analyzed": 0,
+      "createdAt": "2026-03-14T05:40:18.483Z"
+    },
+    {
+      "id": 6,
+      "userId": "user_001",
+      "ambience": "forest",
+      "text": "i feel so calmed and peaceful",
+      "emotion": "calm",
+      "keywords": [
+        "calmed",
+        "peaceful",
+        "so"
+      ],
+      "summary": "The writer feels a sense of deep calm and serenity.",
+      "analyzed": 1,
+      "createdAt": "2026-03-14T05:41:33.800Z"
+    },
+    {
+      "id": 7,
+      "userId": "user_3",
+      "ambience": "forest",
+      "text": "i feel so happy and peaceful",
+      "emotion": "happy",
+      "keywords": [
+        "happy",
+        "peaceful",
+        "feel"
+      ],
+      "summary": "The writer is experiencing a sense of happiness and inner peace.",
+      "analyzed": 1,
+      "createdAt": "2026-03-14T07:10:54.159Z"
+    }
+  ],
+  "nextId": 8,
+  "users": [
+    {
+      "id": "user_1",
+      "username": "pallavi_12",
+      "password": "pallavi_10_12",
+      "displayName": "pallavi",
+      "createdAt": "2026-03-14T07:08:28.407Z"
+    },
+    {
+      "id": "user_2",
+      "username": "kareena",
+      "password": "kareena_10",
+      "displayName": "kareena",
+      "createdAt": "2026-03-14T07:09:45.812Z"
+    },
+    {
+      "id": "user_3",
+      "username": "Nikhi_12",
+      "password": "Nikhitha_nikhi_10",
+      "displayName": "Nikhi",
+      "createdAt": "2026-03-14T07:10:19.230Z"
+    }
+  ],
+  "nextUserId": 4
+}
