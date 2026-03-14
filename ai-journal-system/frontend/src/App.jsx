@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
-const API = 'http://localhost:3001/api/journal';
-const AUTH_API = 'http://localhost:3001/api/auth';
+const API = 'https://ai-assisted-journal-system-production-4cde.up.railway.app/api/journal';
+const AUTH_API = 'https://ai-assisted-journal-system-production-4cde.up.railway.app/api/auth';
 
 const AMBIENCES = [
   { value: 'forest', emoji: '🌲', label: 'Forest' },
@@ -304,7 +304,6 @@ export default function App() {
 
   return (
     <div style={css.app}>
-      {/* Delete Confirm Modal */}
       {confirmDelete && (
         <div style={css.overlay}>
           <div style={css.modal}>
@@ -320,7 +319,6 @@ export default function App() {
       )}
 
       <div style={css.container}>
-        {/* Header */}
         <div style={css.header}>
           <div style={css.logo}>📓 Nature Journal</div>
           <div style={css.userBadge}>
@@ -340,7 +338,6 @@ export default function App() {
           </div>
         )}
 
-        {/* Nav */}
         <div style={css.nav}>
           {tabs.map(t => (
             <button key={t.id} style={css.navBtn(tab === t.id)}
@@ -350,7 +347,6 @@ export default function App() {
           ))}
         </div>
 
-        {/* ── WRITE ── */}
         {tab === 'write' && (
           <div style={css.card}>
             <div style={{ fontSize: 20, fontWeight: 700, color: '#4ade80', marginBottom: 4 }}>
@@ -397,7 +393,6 @@ export default function App() {
           </div>
         )}
 
-        {/* ── ENTRIES ── */}
         {tab === 'entries' && (
           <div>
             <div style={{ ...css.rowBetween, marginBottom: 16 }}>
@@ -410,7 +405,6 @@ export default function App() {
               </button>
             </div>
 
-            {/* Search & Filter */}
             <div style={{ display: 'flex', gap: 10, marginBottom: 16, alignItems: 'center' }}>
               <div style={css.searchWrap}>
                 <span style={css.searchIcon}>🔍</span>
@@ -478,7 +472,6 @@ export default function App() {
           </div>
         )}
 
-        {/* ── ANALYZE ── */}
         {tab === 'analyze' && (
           <div style={css.card}>
             <div style={{ fontSize: 16, fontWeight: 700, color: '#4ade80', marginBottom: 4 }}>Quick Emotion Analysis</div>
@@ -526,7 +519,6 @@ export default function App() {
           </div>
         )}
 
-        {/* ── INSIGHTS ── */}
         {tab === 'insights' && (
           <div>
             <div style={{ ...css.rowBetween, marginBottom: 16 }}>
@@ -543,7 +535,6 @@ export default function App() {
 
             {insights && !loading.insights && (
               <>
-                {/* Stat boxes */}
                 <div style={css.statGrid}>
                   <div style={css.statBox('#4ade80')}>
                     <div style={css.statVal('#4ade80')}>{insights.totalEntries}</div>
@@ -561,7 +552,6 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Emotion distribution */}
                 {Object.keys(insights.emotionDistribution || {}).length > 0 && (
                   <div style={{ ...css.card, marginBottom: 16 }}>
                     <div style={{ fontSize: 14, fontWeight: 700, color: '#4ade80', marginBottom: 14 }}>Emotion Distribution</div>
@@ -584,7 +574,6 @@ export default function App() {
                   </div>
                 )}
 
-                {/* Ambience distribution */}
                 {Object.keys(insights.ambienceDistribution || {}).length > 0 && (
                   <div style={{ ...css.card, marginBottom: 16 }}>
                     <div style={{ fontSize: 14, fontWeight: 700, color: '#4ade80', marginBottom: 14 }}>Favourite Ambiences</div>
@@ -608,7 +597,6 @@ export default function App() {
                   </div>
                 )}
 
-                {/* Mood timeline */}
                 {insights.emotionHistory?.length > 0 && (
                   <div style={{ ...css.card, marginBottom: 16 }}>
                     <div style={{ fontSize: 14, fontWeight: 700, color: '#4ade80', marginBottom: 14 }}>Recent Mood Timeline</div>
@@ -627,7 +615,6 @@ export default function App() {
                   </div>
                 )}
 
-                {/* Recent keywords */}
                 {insights.recentKeywords?.length > 0 && (
                   <div style={css.card}>
                     <div style={{ fontSize: 14, fontWeight: 700, color: '#4ade80', marginBottom: 10 }}>Recent Keywords</div>
